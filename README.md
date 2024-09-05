@@ -1,4 +1,6 @@
+
 ## Installation 
+
 Make sure you have environment setup properly. You will need PHP8.1, composer and Node.js.
 
 1. Download the project (or clone using GIT)
@@ -10,5 +12,5 @@ Make sure you have environment setup properly. You will need PHP8.1, composer an
 7. Start local server by executing `php artisan serve`
 8. Open new terminal and navigate to the `react` folder
 9. Copy `react/.env.example` into `.env` and adjust the `VITE_API_BASE_URL` parameter
-9. Run `npm install`
-10. Run `npm run dev` to start vite server for React
+10. Run `npm install`
+11. Run `npm run dev` to start vite server for React
