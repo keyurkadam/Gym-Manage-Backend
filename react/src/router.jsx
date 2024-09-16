@@ -9,6 +9,8 @@ import Users from "./views/Users";
 import UserForm from "./views/UserForm";
 import MembershipPlan from "./views/MembershipPlan";
 import MembershipPlanForm from "./views/MembershipPlanForm";
+import Members from "./views/Members";
+import MemberForm from "./views/MemberForm";
 
 const router = createBrowserRouter([
   {
@@ -46,6 +48,18 @@ const router = createBrowserRouter([
       {
         path: "/membership-plans/:id",
         element: <MembershipPlanForm key="membershipPlanUpdate" />,
+      },
+      {
+        path: "/members",
+        element: <Members />,
+      },
+      {
+        path: "/members/new",
+        element: <MemberForm key="memberCreate" />,
+      },
+      {
+        path: "/members/:id",
+        element: <MemberForm key="memberUpdate" />,
       },
     ],
   },
