@@ -3,6 +3,7 @@
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\UserController;
 use App\Http\Controllers\Api\MembershipPlansController;
+use App\Http\Controllers\Api\MemberController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -26,7 +27,8 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::apiResource('/users', UserController::class);
 
     
-    Route::apiResource('/membership-plan', MembershipPlansController::class);
+    Route::apiResource('/membership-plans', MembershipPlansController::class);
+    Route::apiResource('/member', MemberController::class);
 });
 
 Route::post('/signup', [AuthController::class, 'signup']);

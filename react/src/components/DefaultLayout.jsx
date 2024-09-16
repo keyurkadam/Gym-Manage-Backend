@@ -30,6 +30,7 @@ export default function DefaultLayout() {
       <aside>
         <Link to="/dashboard">Dashboard</Link>
         <Link to="/users">Users</Link>
+        <Link to="/members">Members</Link>
         <Link to="/membership-plans">Membership Plans</Link>
       </aside>
       <div className="content">

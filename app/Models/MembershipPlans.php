@@ -17,4 +17,9 @@ class MembershipPlans extends Model
         'price',
         'description',
     ];
+
+    public function members()
+    {
+        return $this->hasMany(Member::class, 'membership_plan_id');
+    }
 }
